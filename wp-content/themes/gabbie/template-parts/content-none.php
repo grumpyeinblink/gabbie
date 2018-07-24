@@ -11,10 +11,13 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gabbie' ); ?></h1>
+		<div class="container">
+			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gabbie' ); ?></h1>
+		</div>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
+		<div class="container">
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) :
 
@@ -47,5 +50,6 @@
 
 		endif;
 		?>
+		</div>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
